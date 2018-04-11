@@ -4,7 +4,13 @@
   </h1>
   <img width="200" alt="relay logo" src="assets/Portal-Icon-Default.png">
 
+  <div class="button-container">
+    <button (click)="toggleOne()">toggle one</button>
+  </div>
 
+  <div class="content-container">
+    <app-feature-1 *ngIf="isOneShown"></app-feature-1>
+  </div>
 
 </div>
 
