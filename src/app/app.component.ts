@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isOneShown = false;
+  isTwoShown = false;
   title = 'git branching practice';
 
   toggleOne(): void {
     this.isOneShown = !this.isOneShown;
+  }
+
+  toggleTwo(): void {
+    this.isTwoShown = !this.isTwoShown;
   }
 }
